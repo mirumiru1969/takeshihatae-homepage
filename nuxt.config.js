@@ -22,6 +22,25 @@ export default {
   css: [
   ],
 
+  build: {
+    postcss: {
+      plugins: {
+        'postcss-url': false,
+        'postcss-nested': {},
+        'postcss-responsive-type': {},
+        'postcss-hexrgba': {},
+        'postcss-import': {},
+        'postcss-simple-vars': {},
+        'postcss-breakpoints': {}
+      },
+      preset: {
+        autoprefixer: {
+          grid: true
+        }
+      }
+    }
+  },
+
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
   ],

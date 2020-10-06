@@ -4,7 +4,9 @@
   </div>
 </template>
 
-<style>
+<style lang="postcss">
+$bg-color: rgb(19, 12, 6);
+
 html {
   font-family:
     'Source Sans Pro',
@@ -15,7 +17,7 @@ html {
     'Helvetica Neue',
     Arial,
     sans-serif;
-  font-size: 16px;
+  font-size: responsive 12px 21px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -29,6 +31,15 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+.container {
+  padding: 0 10%;
+}
+
+@breakpoint-down md {
+  .container {
+    padding: 0;
+  }
 }
 
 .button--green {
