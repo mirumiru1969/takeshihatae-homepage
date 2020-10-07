@@ -1,29 +1,16 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        takeshihatae
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-        <NuxtLink to="/information">Information</NuxtLink>
+  <div class="index">
+    <div class="index__container">
+      <div class="index__menu">
+        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/information">Information</nuxt-link>
+        <nuxt-link to="/profile">Profile</nuxt-link>
+        <nuxt-link to="/gear">Gear</nuxt-link>
+        <nuxt-link to="/work">Work</nuxt-link>
+        <nuxt-link to="/contact">Contact</nuxt-link>
       </div>
+      <img class="index__img--lg" src="~/assets/index--lg.jpg" />
+      <img class="index__img--md" src="~/assets/index--md.jpg" />
     </div>
   </div>
 </template>
@@ -32,43 +19,52 @@
 export default {}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="postcss">
+.index {
+  background-color: rgb(0, 0, 0);
+  &__container {
+    position: relative;
+  }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  &__img {
+    &--lg {
+      width: 100%;
+      margin: 0;
+      @media (min-width: 960px) {
+        display: inline-block;
+      }
+      @media (max-width: 959px) {
+        display: none;
+      }
+    }
+    &--md {
+      width: 100%;
+      margin:0 ;
+      @media (min-width: 960px) {
+        display: none;
+      }
+      @media (max-width: 959px) {
+        display: inline-block;
+      }
+    }
+    
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  &__menu {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 959px) {
+      display: none;
+    }
+    a {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 48px;
+      text-shadow: 1px 2px 3px #808080;
+    }
+  }
 }
 </style>

@@ -19,27 +19,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-  ],
-
-  build: {
-    postcss: {
-      plugins: {
-        'postcss-url': false,
-        'postcss-nested': {},
-        'postcss-responsive-type': {},
-        'postcss-hexrgba': {},
-        'postcss-import': {},
-        'postcss-simple-vars': {},
-        'postcss-breakpoints': {}
-      },
-      preset: {
-        autoprefixer: {
-          grid: true
-        }
-      }
-    }
-  },
+  css: ['~/assets/global.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
@@ -58,5 +38,24 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    filenames: {
+      app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
+      chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
+    },
+    postcss: {
+      plugins: {
+        'postcss-url': false,
+        'postcss-nested': {},
+        'postcss-import': {},
+        'postcss-simple-vars': {},
+        'postcss-breakpoints': {},
+        'postcss-responsive-type': {},
+      },
+      preset: {
+        autoprefixer: {
+          grid: true
+        }
+      }
+    }
   }
 }
