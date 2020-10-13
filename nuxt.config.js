@@ -56,5 +56,16 @@ export default {
         }
       }
     }
+  },
+  
+}
+
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/takeshihatae/'
   }
+} : {}
+
+module.exports = {
+  ...routerBase
 }
