@@ -1,8 +1,14 @@
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 1s;
+.index__menu-enter-active, .index__menu-leave-active {
+  transition: opacity 5s
 }
-.page-enter,
-.page-leave-to {
-  opacity: 0;
+.index__menu-enter, .index__menu-leave-active {
+  opacity: 0
+}
+
+.modal__menu-enter-active, .modal__menu-leave-active {
+  transform: translate(0px, 0px); 
+  transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+.modal__menu-enter, .modal__menu-leave-active {
+  transform: translateX(100vw) translateX(0);
 }

@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div class="default">
     <Header />
     <Nuxt />
     <Footer />
+    <ModalMenu />
   </div>
 </template>
 
@@ -36,8 +37,33 @@ html {
   margin: 0;
 }
 
+.default {
+  position: relative
+}
+
 a {
   color : inherit;
   text-decoration : none;
+}
+
+button{
+  padding: 10px 10px;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 5px;
+  transition: color .3s;
+  transition: background-color .3s;
+  &:active {
+    color: white;
+    background-color: gray;
+  }
+  &:hover {
+    color: white;
+    background-color: gray;
+  }
+  &.active {
+    color: white !important;
+    background-color: black !important;
+  }
 }
 </style>
