@@ -1,4 +1,11 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/takeshihatae/'
+  }
+} : {}
+
 export default {
+  ...routerBase,
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
@@ -57,15 +64,8 @@ export default {
       }
     }
   },
-  
-}
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/takeshihatae/'
+  generate: {
+    fallback: true
   }
-} : {}
-
-module.exports = {
-  ...routerBase
 }
