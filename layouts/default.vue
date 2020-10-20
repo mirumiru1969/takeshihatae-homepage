@@ -38,7 +38,7 @@ html {
 }
 
 .default {
-  position: relative
+  position: relative;
 }
 
 a {
@@ -53,17 +53,18 @@ button{
   border-radius: 5px;
   transition: color .3s;
   transition: background-color .3s;
+  color: white;
   &:active {
-    color: white;
+    color: black;
     background-color: gray;
   }
   &:hover {
-    color: white;
+    color: black;
     background-color: gray;
   }
   &.active {
-    color: white !important;
-    background-color: black !important;
+    color: black !important;
+    background-color: white !important;
   }
 }
 </style>

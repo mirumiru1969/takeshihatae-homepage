@@ -1,11 +1,13 @@
 import informationData from '@/assets/json/information.json';
+import workData from '@/assets/json/work.json';
 var years = Object.keys(informationData)
 
 export const state = () => ({
   modalMenuShow: false,
   indexMenuShow: false,
   informationData: informationData,
-  year: Math.max.apply(null,years).toString()
+  year: Math.max.apply(null, years).toString(),
+  workData: workData
 });
 
 export const mutations = {
@@ -24,7 +26,25 @@ export const mutations = {
 }
 
 export const getters = {
-  getAll: (state) => {
+  getInformationAll: (state) => {
     return state.informationData
+  },
+  getWorkArtist: (state) => {
+    return state.workData.artist
+  },
+  getWorkTour: (state) => {
+    return state.workData.tour
+  },
+  getWorkRecording: (state) => {
+    return state.workData.recording
+  },
+  getWorkDvd: (state) => {
+    return state.workData.dvd
+  },
+  getWorkGame: (state) => {
+    return state.workData.game
+  },
+  getWorkTv: (state) => {
+    return state.workData.tv
   }
 }

@@ -13,7 +13,7 @@
 
 <style lang="postcss">
 .index {
-  min-height: 640px;
+  min-height: 800px;
   background-color: rgb(0, 0, 0);
   &__container {
     position: relative;

@@ -2,7 +2,7 @@
   <div class="information">
     <div class="information__container">
       <div class="information__year">
-        <button v-for="(value, year) in getAll" v-bind:class="{ active: year == $store.state.year }" @click="clickButton(year)">
+        <button v-for="(value, year) in getInformationAll" v-bind:class="{ active: year == $store.state.year }" @click="clickButton(year)">
           {{ year }}
         </button>
       </div>
@@ -24,7 +24,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      getAll: 'getAll',
+      getInformationAll: 'getInformationAll',
     })
   },
   methods: {
@@ -37,8 +37,8 @@ export default {
 
 <style lang="postcss">
 .information {
-  min-height: 640px;
-  background-color: white;
+  min-height: 800px;
+  background-color: black;
   &__container {
     padding: 20px 5%;
   }  
@@ -48,9 +48,12 @@ export default {
   }
 
   &__content {
-    margin-top: 30px;
+    margin-top: 100px;
     &--comp {
-      color: black
+      color: white;
+      box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.4);
+      border-radius: 5px;
+      padding: 15px;
     }
   }
 }
