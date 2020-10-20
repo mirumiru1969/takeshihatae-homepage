@@ -48,7 +48,7 @@ a {
 
 button{
   padding: 10px 10px;
-  background-color: transparent;
+  background-color: black;
   border-style: none;
   border-radius: 5px;
   transition: color .3s;

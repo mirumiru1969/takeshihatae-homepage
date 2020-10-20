@@ -66,6 +66,7 @@ export default {
         }
       }
       &--md {
+        background-color: black;
         @media (min-width: 960px) {
           display: none; 
         }

@@ -7,7 +7,7 @@
         </button>
       </div>
       <div class="information__content">
-        <div class="information__content--comp" v-for="data in getAll[$store.state.year]">
+        <div class="information__content--comp" v-for="data in getInformationAll[$store.state.year]">
           <InformationContent :data="data"/>
         </div>
       </div>
@@ -45,10 +45,11 @@ export default {
 
   &__year {
     float:right;
+    background-color: black;
   }
 
   &__content {
-    margin-top: 100px;
+    margin-top: 50px;
     &--comp {
       color: white;
       box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.4);
