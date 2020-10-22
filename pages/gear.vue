@@ -71,9 +71,13 @@
         width: 100%;
         height: 35vw;
         background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s;
         position: absolute;
         top: 0;
         z-index: 5;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0);
+        }
       }
       &--img1 {
         width: 50%;
@@ -110,8 +114,12 @@
         height: 35vw;
         background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
+        transition: background-color 0.3s;
         top: 0;
         z-index: 5;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0);
+        }
       }
       &--img1 {
         width: 50%;

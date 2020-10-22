@@ -30,6 +30,9 @@
 
     &__img {
       width: 100%;
+      @media (min-width: 960px){
+        width: 50%;
+      }
     }
 
     &__name {

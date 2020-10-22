@@ -82,9 +82,11 @@ export default {
     &__icon {
       &--open {
         width: 2rem;
+        color: white;
       }
       &--close {
         width: 2rem;
+        color: white;
       }
     }
   }

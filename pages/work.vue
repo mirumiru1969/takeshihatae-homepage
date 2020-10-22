@@ -25,6 +25,9 @@
         <h3>TV</h3>
         <p v-for="(value) in getWorkTv">{{ value }}</p>
       </div>
+      <div class="work__img">
+        <img src="~/assets/work.jpg">
+      </div>
     </div>
   </div>
 </template>
@@ -58,6 +61,16 @@ export default {
 
     &__content {
       margin-top: 30px;
+    }
+
+    &__img {
+      margin-top: 30px;
+      img {
+        width: 100%;
+        @media (min-width: 960px) {
+          width: 50%;
+        }
+      }
     }
   }
 </style>

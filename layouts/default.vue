@@ -28,6 +28,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 *,
@@ -49,11 +50,11 @@ a {
 button{
   padding: 10px 10px;
   background-color: black;
+  color: white;
   border-style: none;
   border-radius: 5px;
   transition: color .3s;
   transition: background-color .3s;
-  color: white;
   &:active {
     color: black;
     background-color: gray;
