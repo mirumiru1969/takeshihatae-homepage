@@ -51,12 +51,12 @@ export default {
 
 <style lang="postcss">
   .work {
-    min-height: 800px;
+    min-height: 100vh;
     color: white;
     background-color: black;
 
     &__container {
-      padding: 70px 5%;
+      padding: 50px 5%;
     }
 
     &__content {

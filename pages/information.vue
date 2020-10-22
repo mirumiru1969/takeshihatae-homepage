@@ -37,7 +37,7 @@ export default {
 
 <style lang="postcss">
 .information {
-  min-height: 800px;
+  min-height: 100vh;
   background-color: black;
   &__container {
     padding: 20px 5%;

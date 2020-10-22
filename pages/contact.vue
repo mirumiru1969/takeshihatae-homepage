@@ -37,10 +37,11 @@
 
 <style lang="postcss">
   .contact {
+    min-height: 100vh;
     color: white;
     background-color: black;
     &__container {
-      padding: 100px 5%;
+      padding: 50px 5%;
     }
 
     &__mail {
@@ -54,7 +55,7 @@
     }
 
     &__form {
-      margin-top: 30px;
+      margin-top: 50px;
       form dd {
         margin: 0.25em 0 1.25em;
       }

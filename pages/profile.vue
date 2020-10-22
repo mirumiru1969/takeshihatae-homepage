@@ -22,10 +22,11 @@
 
 <style lang="postcss">
   .profile {
+    min-height: 100vh;
     background-color: black;
     &__container {
       color: white; 
-      padding: 100px 5%;
+      padding: 50px 5%;
     }
 
     &__img {

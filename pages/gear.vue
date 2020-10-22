@@ -56,10 +56,11 @@
 
 <style lang="postcss">
   .gear {
+    min-height: 100vh;
     background-color: black;
     color: white;
     &__container {
-      padding: 100px 5%;
+      padding: 50px 5%;
     }
 
     &__live {
