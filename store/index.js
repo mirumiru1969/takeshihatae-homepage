@@ -4,7 +4,7 @@ var years = Object.keys(informationData)
 
 export const state = () => ({
   modalMenuShow: false,
-  indexMenuShow: false,
+  indexShow: false,
   informationData: informationData,
   year: Math.max.apply(null, years).toString(),
   workData: workData
@@ -17,8 +17,8 @@ export const mutations = {
   closeModalMenu(state) {
     state.modalMenuShow = false
   },
-  showIndexMenu(state) {
-    state.indexMenuShow = true
+  showIndex(state) {
+    state.indexShow = true
   },
   changeYear(state, year) {
     state.year = year

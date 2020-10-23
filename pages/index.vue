@@ -1,14 +1,23 @@
 <template>
   <div class="index">
-    <div class="index__container">
-      <IndexMenu />
-      <img class="index__img--lg" src="~/assets/index--lg.jpg" />
-      <img class="index__img--md" src="~/assets/index--md.jpg" />
-    </div>
+    <transition name="index" >
+      <div class="index__container" v-if="$store.state.indexShow">
+        <img class="index__img--lg" src="~/assets/index--lg.jpg" />
+        <img class="index__img--md" src="~/assets/index--md.jpg" />
+        <IndexMenu />
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
+export default {
+  mounted() {
+    this.$nextTick(() => {
+      this.$store.commit('showIndex');
+    })
+  }
+}
 </script>
 
 <style lang="postcss">

@@ -1,36 +1,38 @@
 <template>
-  <transition name="index__menu" v-if="$store.state.indexMenuShow">
-    <div class="index__menu">
-      <MenuLink />
-    </div>
-  </transition>
+  <div class="index__menu">
+    <MenuLink />
+  </div>
 </template>
 
 <script>
-export default {
-  mounted() {
-    this.$nextTick(() => {
-      this.$store.commit('showIndexMenu');
-    })
-  }
-}
 </script>
 
 <style lang="postcss">
   .index__menu {
-    position: absolute;
-    top: 45%;
-    left: 5%;
+    @media (min-width: 960px) {
+      position: absolute;
+      top: 45%;
+      left: 5%;
+      .menu__link {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        text-shadow: 1px 2px 3px #808080;
+      }
+    }
     @media (max-width: 959px) {
-      display: none;
+      color: white;
+      .menu__link {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1rem 5%;
+        background: linear-gradient(178deg, black 65%, gray);
+      }
     }
-    .menu__link {
-      display: flex;
-      flex-direction: column;
-      font-size: 32px;
-      font-weight: 500;
-      line-height: 48px;
-      text-shadow: 1px 2px 3px #808080;
-    }
+    
   }
 </style>

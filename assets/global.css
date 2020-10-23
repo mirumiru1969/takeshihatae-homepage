@@ -1,7 +1,7 @@
-.index__menu-enter-active, .index__menu-leave-active {
+.index-enter-active, .index-leave-active {
   transition: opacity 5s
 }
-.index__menu-enter, .index__menu-leave-active {
+.index-enter, .index-leave-active {
   opacity: 0
 }
 
