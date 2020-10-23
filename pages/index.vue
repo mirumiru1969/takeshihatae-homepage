@@ -31,6 +31,7 @@ export default {
   &__img {
     &--lg {
       width: 100%;
+      height: calc(100vw * (945/1418));
       margin: 0;
       @media (min-width: 960px) {
         display: inline-block;
@@ -41,6 +42,7 @@ export default {
     }
     &--md {
       width: 100%;
+      height: calc(100vw * (559/414));
       margin:0 ;
       @media (min-width: 960px) {
         display: none;

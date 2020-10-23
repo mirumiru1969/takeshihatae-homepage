@@ -1,5 +1,5 @@
 .index-enter-active, .index-leave-active {
-  transition: opacity 5s
+  transition: opacity 7s
 }
 .index-enter, .index-leave-active {
   opacity: 0
