@@ -76,8 +76,10 @@
         position: absolute;
         top: 0;
         z-index: 5;
-        &:hover {
-          background-color: rgba(0, 0, 0, 0);
+        @media (min-width: 960px) {
+          &:hover {
+            background-color: rgba(0, 0, 0, 0);
+          }
         }
       }
       &--img1 {
@@ -118,8 +120,10 @@
         transition: background-color 0.3s;
         top: 0;
         z-index: 5;
-        &:hover {
-          background-color: rgba(0, 0, 0, 0);
+        @media (min-width: 960px) {
+          &:hover {
+            background-color: rgba(0, 0, 0, 0);
+          }
         }
       }
       &--img1 {

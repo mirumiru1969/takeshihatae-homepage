@@ -49,7 +49,7 @@ export default {
   }
 
   &__content {
-    margin-top: 50px;
+    margin-top: 80px;
     &--comp {
       color: white;
       box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.4);
