@@ -11,7 +11,7 @@
       "member": "(B)須藤満、(Key)安部潤、(Sax/EWI)宮崎隆睦、(箏)吉永真奈、(Ds)波多江健",
       "charge": "前売券　テーブル席(指定)￥5,000 、Dinner Set (Mini Dinner・1Drink付/MC・SC込)￥12,000、当日券は各料金￥550UP　(各税込)"
     },
-    { "date": "10/6(日) ",
+    { "date": "10/6(日)~",
       "place": "",
       "title": "TVアニメ「「警視庁 特務部 特殊凶悪犯対策室 第七課 -トクナナ」",
       "link": "http://www.tokunana.jp/",
@@ -24,6 +24,22 @@
       "title": "CHEMISTRY LIVE TOUR 2019 「CHEMISTRY～Still Walking～",
       "link": "http://www.chemistry-official.net/s/n47/page/live?ima=3430",
       "detail": "再始動後、初のオリジナルアルバム「CHEMISTRY」をひっさげての全国ツアー。",
+      "member": "",
+      "charge": ""
+    },
+    { "date": "",
+      "place": "",
+      "title": "米澤美玖＠CLAPS（東京・六本木）",
+      "link": "http://yonezawamiku.com/",
+      "detail": "",
+      "member": "",
+      "charge": ""
+    },
+    { "date": "",
+      "place": "",
+      "title": "米澤美玖＠エレクトリック神社（東京・六本木)",
+      "link": "http://yonezawamiku.com/",
+      "detail": "",
       "member": "",
       "charge": ""
     }
