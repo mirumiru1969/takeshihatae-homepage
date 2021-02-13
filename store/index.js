@@ -1,6 +1,5 @@
-// import informationData from '@/assets/json/information.json';
 import informationData from 'js-yaml-loader!@/assets/json/information.yml';
-import workData from '@/assets/json/work.json';
+import workData from 'js-yaml-loader!@/assets/json/work.yml';
 var years = Object.keys(informationData)
 
 export const state = () => ({
