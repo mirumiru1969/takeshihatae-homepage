@@ -1,4 +1,11 @@
-
+# template 
+# - date: ''
+#   place: ''
+#   title: ''
+#   link: ''
+#   detail: ''
+#   member: ''
+#   charge: ''
 '2016': 
   - date: 06/06 ~ 08/30
     place: ''
